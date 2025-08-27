@@ -64,7 +64,7 @@ const ForgotPasswordEmail = ({ userName, resetUrl, requestTime }: PasswordResetE
               </Section>
 
               <Text className="text-[14px] text-gray-600 leading-[20px] mb-[16px]">
-                If the button above doesn't work, you can also click on this link or copy and paste it into your browser:
+                If the button above doesn&apos;t work, you can also click on this link or copy and paste it into your browser:
               </Text>
 
               {/* Reset Link */}
@@ -89,13 +89,13 @@ const ForgotPasswordEmail = ({ userName, resetUrl, requestTime }: PasswordResetE
                   • The link can only be used once
                 </Text>
                 <Text className="text-[14px] text-yellow-700 leading-[20px] m-0">
-                  • If you didn't request this, please ignore this email
+                  • If you didn&apos;t request this, please ignore this email
                 </Text>
               </Section>
 
               <Text className="text-[14px] text-gray-600 leading-[20px] mb-[24px]">
-                If you didn't request a password reset, you can safely ignore this email. 
-                Your password will remain unchanged. If you're concerned about your account security, 
+                If you didn&apos;t request a password reset, you can safely ignore this email. 
+                Your password will remain unchanged. If you&apos;re concerned about your account security, 
                 please contact our support team immediately.
               </Text>
 

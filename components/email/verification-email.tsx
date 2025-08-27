@@ -64,7 +64,7 @@ const VerificationEmail = (
               </Section>
 
               <Text className="text-[14px] text-gray-600 leading-[20px] mb-[16px]">
-                If the button above doesn't work, you can also click on this link or copy and paste it into your browser:
+                If the button above doesn&apos;t work, you can also click on this link or copy and paste it into your browser:
               </Text>
 
               {/* Verification Link */}
@@ -82,7 +82,7 @@ const VerificationEmail = (
               </Text>
 
               <Text className="text-[14px] text-gray-600 leading-[20px] mb-[24px]">
-                If you didn't create an account with us, please ignore this email or contact our support team.
+                If you didn&apos;t create an account with us, please ignore this email or contact our support team.
               </Text>
 
               <Text className="text-[16px] text-gray-700 leading-[24px]">
