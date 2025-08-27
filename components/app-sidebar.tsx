@@ -12,6 +12,7 @@ import { getNotebooks } from "@/server/notebooks";
 import Image from "next/image";
 import Link from "next/link";
 import { SidebarData } from "./sidebar-data";
+import { Suspense } from "react";
 
 export async function AppSidebar({
   ...props
@@ -40,9 +41,9 @@ export async function AppSidebar({
           <h2>CodeOwl</h2>
         </Link>
 
-        <React.Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <SearchForm />
-        </React.Suspense>
+        </Suspense>
       </SidebarHeader>
       <SidebarContent className="gap-0">
         <SidebarData data={data} />

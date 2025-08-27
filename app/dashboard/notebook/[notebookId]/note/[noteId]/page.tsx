@@ -2,6 +2,7 @@ import { PageWrapper } from "@/components/page-wrapper";
 import RichTextEditor from "@/components/rich-text-editor";
 import { getNoteById } from "@/server/notes";
 import { JSONContent } from "@tiptap/react";
+import { Suspense } from "react";
 
 type Params = Promise<{
   noteId: string;
@@ -13,6 +14,7 @@ export default async function NotePage({ params }: { params: Params }) {
   const { note } = await getNoteById(noteId);
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <PageWrapper
       breadcrumbs={[
         { label: "Dashboard", href: "/dashboard" },
@@ -29,5 +31,6 @@ export default async function NotePage({ params }: { params: Params }) {
         noteId={noteId}
       />
     </PageWrapper>
+    </Suspense>
   );
 }

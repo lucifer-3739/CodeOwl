@@ -2,6 +2,7 @@ import { CreateNoteButton } from "@/components/create-note-button";
 import NoteCard from "@/components/note-card";
 import { PageWrapper } from "@/components/page-wrapper";
 import { getNotebookById } from "@/server/notebooks";
+import { Suspense } from "react";
 
 type Params = Promise<{
   notebookId: string;
@@ -13,6 +14,7 @@ export default async function NotebookPage({ params }: { params: Params }) {
   const { notebook } = await getNotebookById(notebookId);
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <PageWrapper
       breadcrumbs={[
         { label: "Dashboard", href: "/dashboard" },
@@ -32,5 +34,6 @@ export default async function NotebookPage({ params }: { params: Params }) {
         ))}
       </div>
     </PageWrapper>
+    </Suspense>
   );
 }
