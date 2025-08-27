@@ -1,1 +1,15 @@
+npm install
+
 npx drizzle-kit push
+
+npm run dev
+
+
+.env files requirement
+BETTER_AUTH_SECRET=
+BETTER_AUTH_URL=
+NEXT_PUBLIC_BASE_URL=
+
+DATABASE_URL=
+
+RESEND_API_KEY=
